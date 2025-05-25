@@ -1,0 +1,224 @@
+.app-page {
+	.app-page-header {
+		padding: 16px 32px 0;
+		border-bottom: 1px solid #e8e8e8;
+		background: #fff;
+		h1 {
+			margin-bottom: 16px;
+			font-size: 20px;
+			font-weight: 500;
+			color: rgba(0, 0, 0, .85);
+		}
+		p {
+			margin-top: 0;
+			margin-bottom: 1em;
+			font-size: 14px;
+			line-height: 1.5;
+			color: rgba(0,0,0,.65);
+		}
+	}
+	.app-page-cont {
+		margin: 24px 24px 0;
+	}
+	// .app-page-list {
+	// 	margin: 24px 24px 0;
+	// 	padding: 24px 32px;
+	// 	border-radius: 2px;
+	// 	background: #fff;
+	// }
+	.app-page-list {
+		margin: 8px 8px 0;
+		padding: 24px;
+		border-radius: 2px;
+		background: #fff;
+	}
+	.app-page-detail {
+		overflow: hidden;
+		margin: 24px;
+		font-size: 14px;
+	    line-height: 1.5;
+	    color: rgba(0, 0, 0, .65);
+	    .app-page-detail-container {
+	    	padding: 24px;
+				border-radius: 5px;
+				background: #fff;
+				border:1px solid #ebeef5;
+	    }
+		.app-page-detail-avatarHolder {
+			margin-bottom: 24px;
+			text-align: center;
+			img {
+				margin: 0 auto 20px;
+				display: block;
+				width: 104px;
+				height: 104px;
+				vertical-align: top;
+			}
+			.app-page-detail-avatarHolder-name {
+				margin-bottom: 4px;
+				font-size: 20px;
+				line-height: 28px;
+				font-weight: 500;
+				color: rgba(0, 0, 0, .85);
+			}
+		}
+		.app-page-detail-desc {
+			p {
+				position: relative;
+				margin-bottom: 8px;
+			    padding-left: 26px;
+			    .svg-icon {
+			    	margin-right: 5px;
+			    }
+			}
+		}
+		.app-page-detail-r {
+			border-radius: 2px;
+			background: #fff;
+		}
+		.app-page-detail-tab {
+			padding-left: 16px;
+			font-size: 16px;
+			font-weight: 500;
+			color: rgba(0, 0, 0, .65);
+			border-bottom: 1px solid #e8e8e8;
+			div {
+				position: relative;
+				display: inline-block;
+				padding: 16px;
+				cursor: pointer;
+				&.active {
+					color: #1890ff;
+					&:after {
+						content: '';
+						position: absolute;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						height: 1px;
+						background: #1890ff;
+					}
+				}
+				&:hover {
+					color: #1890ff;
+					&:after {
+						content: '';
+						position: absolute;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						height: 1px;
+						background: #1890ff;
+					}
+				}
+				span {
+					font-size: 14px;
+				}
+			}
+		}
+		.app-page-detail-list {
+			padding: 24px 32px;
+			.app-page-detail-item {
+				margin-bottom: 16px;
+				padding-bottom: 16px;
+				border-bottom: 1px solid #e8e8e8;
+				&:last-child {
+					margin-bottom: 0;
+					border-bottom: none;
+				}
+				.app-page-detail-item-title {
+					margin: 0 0 12px;
+					font-size: 16px;
+					line-height: 24px;
+					color: rgba(0, 0, 0, .85);
+				}
+				.app-page-detail-item-service {
+					overflow: hidden;
+					margin-bottom: 10px;
+					.w-80 {
+						float: left;
+						width: 80px;
+					}
+				}
+				.app-page-detail-item-tab {
+					margin-bottom: 16px;
+					span {
+						margin: 0 8px 0 0;
+						padding: 0 7px;
+						display: inline-block;
+						box-sizing: border-box;
+						font-size: 14px;
+						line-height: 1.5;
+						height: 22px;
+						font-size: 12px;
+						list-style: none;
+						border-radius: 4px;
+						border: 1px solid #d9d9d9;
+						background: #fafafa;
+						color: rgba(0, 0, 0, .65);
+						cursor: pointer;
+						white-space: nowrap;
+						transition: all .3s cubic-bezier(.215,.61,.355,1);
+						&:hover {
+							opacity: .85;
+						}
+					}
+				}
+				.app-page-detail-item-desc {
+					overflow: hidden;
+					line-height: 22px;
+					max-width: 720px;
+					.app-page-detail-item-desc-title {
+						float: left;
+						display: inline-block;
+						width: 80px;
+					}
+					.app-page-detail-item-desc-cont {
+						overflow: hidden;
+						float: left;
+						p {
+							margin: 0 0 5px 0;
+						}
+					}
+				}
+				.app-page-detail-item-extend {
+				    margin-top: 16px;
+				    line-height: 22px;
+					color: rgba(0, 0, 0, .45);
+					img {
+						position: relative;
+						margin-right: 8px;
+						top: 1px;
+						width: 20px;
+						height: 20px;
+						vertical-align: top;
+					}
+					i {
+						font-style: normal;
+						color: #1890ff;
+					}
+					em {
+						margin-left: 5px;
+						font-style: normal;
+						color: rgba(0, 0, 0, .25);
+						&.blue {
+							color: #1890ff;
+						}
+					}
+				}
+			}
+		}
+	}
+	.app-page-form {
+		margin: 24px 24px 0;
+		padding: 24px 32px;
+		border-radius: 2px;
+		background: #fff;
+		.el-form {
+			max-width: 80%;
+			margin: 8px auto 0;
+		}
+	}
+	.text-right {text-align: right;}
+	.text-left {text-align: left;}
+}

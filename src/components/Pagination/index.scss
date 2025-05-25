@@ -1,0 +1,48 @@
+.pagination-container /deep/ {
+  .el-pagination__total {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0;
+    text-align: center;
+    margin-right: 4px;
+  }
+  .el-input__inner {
+    border-color: #cecece;
+    padding-left: 0;
+  }
+  .el-pager {
+    .number {
+      font-family: ArialMT;
+      font-size: 12px;
+      color: #666666;
+      letter-spacing: 0;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #cecece;
+      border-radius: 3px;
+      line-height: 26px;
+      &.active {
+        background: #3aa2eb;
+        border-color: #3aa2eb;
+      }
+    }
+    .more {
+      color: #666666;
+      background: #fff;
+      border: 1px solid #cecece;
+    }
+  }
+  .btn-prev,
+  .btn-next {
+    color: #666666;
+    background: #fff;
+    border: 1px solid #cecece;
+  }
+  .el-pagination__jump{
+      margin-left:10px;
+      .el-pagination__editor.el-input {
+        width: 36px;
+      }
+  }
+}

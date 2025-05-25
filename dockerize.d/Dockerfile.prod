@@ -1,0 +1,7 @@
+FROM nginx:alpine
+
+#test-zidonghuagoujian
+COPY dist /usr/share/nginx/html
+
+COPY dockerize.d/nginx.conf /etc/nginx/nginx.conf
+COPY dockerize.d/nginx.vh.default.conf /etc/nginx/conf.d/default.conf

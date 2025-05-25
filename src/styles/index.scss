@@ -1,0 +1,366 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './btn.scss';
+@import './page.scss';
+
+::-webkit-scrollbar { /* 血槽宽度 */
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb { /* 拖动条 */
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+::-webkit-scrollbar-track { /* 背景槽 */
+  border-radius: 6px;
+  background-color: #ddd;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  // font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-family: Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-variant: tabular-nums;
+}
+
+label {
+  font-weight: 700;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pan-green {
+  color: $panGreen;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.red {
+  color: $red;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+code {
+  background: #eef1f6;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  display: block;
+  line-height: 36px;
+  font-size: 15px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  a {
+    color: #337ab7;
+    cursor: pointer;
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
+
+.warn-content{
+  background: rgba(66,185,131,.1);
+  border-radius: 2px;
+  padding: 16px;
+  padding: 1rem;
+  line-height: 1.6rem;
+  word-spacing: .05rem;
+  a{
+    color: #42b983;
+    font-weight: 600;
+  }
+}
+
+//main-container全局样式
+.app-container {
+  margin: 24px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.components-container {
+  margin: 30px 50px;
+  position: relative;
+}
+
+.pagination-container {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.text-center {
+  text-align: center
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+  &.draft {
+    background: #d0d0d0;
+  }
+  &.deleted {
+    background: #d0d0d0;
+  }
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+.filter-container {
+  padding-bottom: 10px;
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+
+.mlr--12 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.mlr-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mtb-24-16 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.plr-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.plr-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.ptb-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.plr-48 {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.bb-1 {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+path { fill: inherit !important }
+
+.app-form {
+  .el-input__inner {
+    height: 32px;
+    line-height: 32px;
+  }
+  .el-date-editor--daterange {
+    &.el-input__inner {
+      width: 90%;
+    }
+  }
+}
+
+.el-form-item__label {
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.el-button--medium {
+  padding: 8px 18px;
+}
+
+.one-transfer {
+  .el-transfer-panel {
+    width: 40%;
+  }
+  .el-transfer__buttons {
+    width: 20%;
+    button {
+      margin: 10px auto 0;
+    }
+  }
+}
+
+.zebra-s{
+  background:#F3F6F9;
+  width:100%;
+  color:#858C96;
+}
+.zebra-d{
+  background:#FFFFFF;
+  width:100%;
+  color:#858C96;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.el-card{
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.el-cascader-panel>.el-cascader-menu:nth-child(2)>.el-cascader-menu__wrap>.el-scrollbar__view>.el-cascader-node>.el-icon-arrow-right{
+  display: none;
+}
+.roleItem{
+  position: relative;
+}
+.cascaderItem{
+  position: absolute;
+  top:40px;
+  width:100%;
+  left:0px
+}
+.el-cascader-panel .el-checkbox{ 
+  width: 100%; 
+  height: 100%;
+  z-index: 10; 
+  position: absolute; 
+  right: -10px;
+  .el-radio__input{
+    visibility: hidden;  //隐藏单选框，不隐藏就不用设置
+  }
+  .el-cascader-node__postfix{ 
+    top: 10px;
+  }
+}
+// .el-cascader-panel>.el-scrollbar:first-child>.el-cascader-menu__wrap>.el-scrollbar__view>.el-cascader-node>.el-checkbox{
+//   display: none;
+// }

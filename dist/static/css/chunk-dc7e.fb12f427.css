@@ -1,0 +1,18 @@
+.workplace-page[data-v-a75aff22] {
+  position: relative;
+  height: calc(100vh - 50px);
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-variant: tabular-nums;
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.65);
+  background: #3b97ff;
+}
+.workplace-page .workplace-container[data-v-a75aff22] {
+    text-align: center;
+}
+
